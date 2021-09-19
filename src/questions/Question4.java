@@ -10,6 +10,13 @@ class Student{
     String name;
     float percentage;
 
+    public String getName() {
+        return name;
+    }
+    public float getPercentage() {
+        return percentage;
+    }
+
     public Student(String name, float percentage) {
         this.name = name;
         this.percentage = percentage;
@@ -18,9 +25,24 @@ class Student{
 
 public class Question4 {
     public static void main(String[] args) {
-        Student s1 = new Student("Ram",30);
-        Student s2 = new Student("Ajay",35);
-        Student s3 = new Student("Tej",28);
+        Student s1 = new Student("Ram",80);
+        Student s2 = new Student("Ajay",70);
+        Student s3 = new Student("Tej",90.2f);
+        float m = Math.max(Math.max(s1.getPercentage(), s2.getPercentage()), s3.getPercentage());
+        System.out.println("Toppers details:");
+        if(m== s1.getPercentage()){
+            System.out.println(s1.getName());
+            System.out.println(s1.getPercentage());
+        }
 
+        else if(m== s2.getPercentage()){
+            System.out.println(s2.getName());
+            System.out.println(s2.getPercentage());
+        }
+
+        else{
+            System.out.println(s3.getName());
+            System.out.println(s3.getPercentage());
+        }
     }
 }
