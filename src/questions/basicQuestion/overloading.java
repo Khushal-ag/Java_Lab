@@ -2,11 +2,11 @@ package questions.basicQuestion;
 class calculation {
     int area;
     int area(int x) {
-        area = x*x;
         return area;
     }
     int area(int x,int y) {
         area = x*y;
+        area = x*x;
         return area;
     }
 }
