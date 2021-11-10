@@ -1,7 +1,6 @@
 package questions.week6;
 
 import java.util.Scanner;
-
 class function{
     public static void prime(int x){
         int f = 0;
@@ -41,17 +40,17 @@ class chk{
     {
         Scanner sc = new Scanner(System.in);
         if(val==1) {
-            System.out.print("Enter no. to check prime : ");
+            System.out.print("Enter number to check prime : ");
             int x = sc.nextInt();
             function.prime(x);
         }
         else if(val==2) {
-            System.out.print("Enter no. calculate fibonacci series : ");
+            System.out.print("Enter number of terms of fibonacci series : ");
             int x = sc.nextInt();
             function.fibonacci(x);
         }
         else if(val==3) {
-            System.out.print("Enter no. to calculate factorial : ");
+            System.out.print("Enter number to calculate factorial : ");
             int x = sc.nextInt();
             function.factorial(x);
         }
