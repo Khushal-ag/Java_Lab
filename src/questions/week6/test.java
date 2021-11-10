@@ -33,6 +33,7 @@ class function{
             total = a+b;
             x -= 1;
         }
+        System.out.println();
     }
 }
 class chk{
@@ -54,6 +55,9 @@ class chk{
             int x = sc.nextInt();
             function.factorial(x);
         }
+        else{
+            System.out.println("Program Finish.");
+        }
     }
 }
 public class test {
@@ -61,12 +65,13 @@ public class test {
         Scanner sc = new Scanner(System.in);
         int t;
         do{
-            System.out.println("[1] Prime no. : ");
-            System.out.println("[2] Fibonacci : ");
-            System.out.println("[3] Factorial : ");
-            System.out.println("[4] Exit : ");
+            System.out.println("[1] Prime no.");
+            System.out.println("[2] Fibonacci.");
+            System.out.println("[3] Factorial.");
+            System.out.println("[4] Exit.");
             System.out.print("Enter Choice -> ");
             t = sc.nextInt();
+            chk.chk_function(t);
         }while (t != 4);
     }
 }
