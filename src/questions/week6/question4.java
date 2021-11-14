@@ -25,7 +25,7 @@ public class question4 extends UserRegistration{
             UserRegistration.registerUser(username, userCountry);
         }
         catch(InvalidCountryException e){
-            System.out.println(e);
+            System.out.println("Exception : "+e);
         }
     }
 }
