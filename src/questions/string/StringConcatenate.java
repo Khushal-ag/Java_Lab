@@ -11,7 +11,7 @@ public class StringConcatenate {
     {
         s1 = s1.toLowerCase();
         s2 = s2.toLowerCase();
-        if(s1.charAt(s1.length()-1) == s2.charAt(0))
+        if(s1.charAt(s1.length() - 1) == s2.charAt(0))
             s1 = s1 + s2.substring(1);
         else s1 = s1 + s2;
         return s1;
