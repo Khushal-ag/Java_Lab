@@ -1,5 +1,9 @@
+//Given two strings, append them together (known as
+// "concatenation") and return the result. However, if the concatenation
+// creates a double-char, then omit one of the chars. If the inputs
+// are “Mark” and “Kate” then the output should be “markate”.
+// (The output should be in lowercase).
 package questions.string;
-
 import java.util.Scanner;
 
 public class StringConcatenate {
