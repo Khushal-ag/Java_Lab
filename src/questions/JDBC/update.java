@@ -13,7 +13,6 @@ public class update {
         String str = "Insert into jdbc values(?,?)";
         System.out.print("Enter no. of rows you want to insert : ");
         int n = sc.nextInt();
-
         PreparedStatement psmt = con.prepareStatement(str);
         while (n>0)
         {
@@ -26,13 +25,11 @@ public class update {
             n -= 1;
             psmt.executeUpdate();
         }
-
         ResultSet rs = psmt.executeQuery("SELECT * from jdbc");
         while(rs.next())
         {
             System.out.println(rs.getString(1)+" "+rs.getInt(2));
         }
-
         con.close();
     }
 }
