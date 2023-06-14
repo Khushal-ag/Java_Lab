@@ -1,4 +1,7 @@
 package questions.week2;
+
+import questions.week2.Outer.Inner;
+
 class Outer{
     public void display(){
         System.out.println("Inside outer");
@@ -13,7 +16,6 @@ public class Main {
     public static void main(String[] args) {
         Outer obj = new Outer();
         obj.display();
-        Outer.Inner obj2 = obj.new Inner();
-        obj2.display();
+        Inner.display();
     }
 }

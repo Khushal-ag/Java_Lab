@@ -1,8 +1,9 @@
-package question;
+package questions.week2;
 import java.util.Scanner;
 
 class Point {
-    private int x,y;
+    private int x, y;
+
     public Point()
     {
         x = 0;

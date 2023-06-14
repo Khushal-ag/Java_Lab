@@ -1,4 +1,4 @@
-package question;
+package questions.week2;
 interface test{
     public void square(int n);
 }

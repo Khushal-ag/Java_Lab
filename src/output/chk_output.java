@@ -1,21 +1,24 @@
 package output;
-class Test{
-    public static void change(Integer i)
-    {
-        i++;
-    }
-    public static void change(int i)
-    {
-        i++;
-    }
-}
+
 public class chk_output {
     public static void main(String[] args) {
-        int i2 = 25;
-        Integer i1 = i2;
-        Test.change(i1);
-        Test.change(i2);
-        System.out.println(i1);
-        System.out.println(i2);
+        // short k = 1;
+        // short k = (short) (p + 2);
+        // k += 2;
+        // System.out.println(k);
+
+        // int k = 20;
+        // if(k==20) System.out.println("YES");
+        // else System.out.println("NO");
+
+        // byte a = 1;
+        // if (a==1)
+        //     System.out.println("Fish");
+        // else
+        //     System.out.println("CRAB");
+        // byte a = 0b0000_0001;
+        // System.out.println(0b0000_1000); //-2
+        int String = 30;
+        System.out.println(String);
     }
 }
